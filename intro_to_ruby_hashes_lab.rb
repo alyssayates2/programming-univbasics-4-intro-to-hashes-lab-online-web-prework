@@ -25,9 +25,9 @@ end
 def update_counting_hash(hash, key)
     # given a hash an a key as parameters, return an updated hash
     {
-      :key => 1
+      :key += 1
     }
-
+hash.fetch(key , 1 )
 # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
 end
